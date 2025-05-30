@@ -1,0 +1,29 @@
+@media (min-width: 749px) and (max-width: 1160px) {
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 748px) {
+    .sessao-titulo {
+        font-size: 28px;
+    }
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 549px) {
+    .sessao-titulo {
+        font-size: 22px;
+    }
+    .parag-prom {
+        font-size: 14px;
+    }
+    .produtos {
+        grid-template-columns: 1fr;
+        max-width: 240px;
+    }
+}

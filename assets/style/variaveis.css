@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-branca: #ffffff;
+    --cor-cinza: #cccccc;
+    --cor-preta: #000000;
+    --cor-verde: #daff01;
+    --cor-roxo: #9353ff;
+
+    --fonte-principal: "Inter", sans-serif;
+    --font-small: 13px;
+    --font-parag: 16px;
+    --font-medium: 20px;
+    --font-big: 32px;
+
+}

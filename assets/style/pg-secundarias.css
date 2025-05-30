@@ -1,0 +1,163 @@
+/*NOSSAS LOJAS*/
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../imgens/seta-select.png');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+select:focus {
+    border: 3px solid #5d00ff8f;
+    box-shadow: 0 0 5px 1px #3200888f;
+}
+
+.lojas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    min-height: 850px;
+    margin: 0 auto;
+}
+
+.div-head {
+    display: flex;
+    margin: 2.5rem 2rem;
+    align-items: center;
+    min-height: 450px;
+}
+
+.div-titulos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+
+#titulo-pg {
+    font-size: 26px;
+}
+
+#parag1 {
+    font-size: var(--font-big);
+}
+
+#parag2 {
+    font-size: var(--font-medium);
+}
+
+#ilust-local {
+    max-width: 43%;
+    height: auto;
+    margin: 20px;
+}
+
+/* NOSSAS LOJAS - LISTA  */
+.lista-cidades {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 40px;
+}
+
+.select-container {
+    display: flex;
+}
+
+.list-state, .list-city {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+
+.list-state > span, .list-city > span {
+    font-size: var(--font-small);
+    margin-bottom: 5px;
+}
+
+#estado, #cidade {
+    width: 180px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+/* NOSSA LOJAS - CONSULTA */
+.loja-card {
+    border: 1px solid #dfdfdf;
+    box-shadow: 5px 4px 8px #d4d4d4;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 10px 20px 0;
+    width: 300px;
+}
+
+.loja-card h3 {
+    font-size: 1.2em;
+}
+.loja-card p {
+    margin: 5px 0;
+}
+
+.status-aberta {
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+#lista-lojas {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+
+/*NOVIDADES*/
+.novid-container {
+    padding: 20px 0;
+}
+
+/*PROMOÇOES*/
+.promo-container {
+    padding: 25px 0;
+}
+
+.parag-prom {
+    grid-column: 1 / -1;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+.percent {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: white;
+    padding: 8px;
+}
+
+.old-price {
+    color: #a0a0a0;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+.preco-promo {
+    font-weight: 600;
+    font-size: 17px;
+    color: #750b0b;
+    position: relative;
+    top: -12px;
+}

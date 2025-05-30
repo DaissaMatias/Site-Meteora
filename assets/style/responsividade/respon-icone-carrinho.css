@@ -1,0 +1,63 @@
+@media screen and (max-width: 1070px) {
+    .icone-carrinho{
+        padding: 10px 18px;
+        top: 73px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .icone-carrinho{
+        padding: 8px 16px;
+        top: 57px;
+    }
+
+    .icone-carrinho svg{
+        width: 53px;
+        height: 53px;
+    }
+
+    #carrinho-cont {
+        padding: 1px 5px;
+    }
+}
+
+@media screen and (max-width: 748px) {
+    .icone-carrinho{
+        padding: 6px 14px;
+        top: 65px;
+        left: 8px;
+    }
+
+    .icone-carrinho svg{
+        width: 45px;
+        height: 45px;
+    }
+
+    #carrinho-cont {
+        top: 4px;
+        right: 4px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .icone-carrinho{
+        padding: 4px 10px;
+        top: 125px;
+        border-radius: 100px;
+    }
+
+    .icone-carrinho svg{
+        width: 35px;
+        height: 40px;
+    }
+
+    #carrinho-cont {
+        top: 10px;
+        right: 18px;
+        font-size: 10px;
+        background-color: #ffffffbd;
+        color: #f32d2d;
+    }
+}

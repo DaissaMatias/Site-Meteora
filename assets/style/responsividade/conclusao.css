@@ -1,0 +1,21 @@
+@media screen and (max-width: 650px) {
+    .ilustracao img {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+
+    .ilustracao img {
+        width: 300px;
+    }
+
+    .acoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-primario {
+        margin-right: 0;
+    }
+}

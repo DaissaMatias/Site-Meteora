@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imgens/Favicon-64px.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style/variaveis.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/responsividade/responsivo-cabecalho.css">
+    <link rel="stylesheet" href="./assets/style/pg-secundarias.css">
+    <link rel="stylesheet" href="./assets/style/responsividade/respon-nossas-lojas.css">
+    <link rel="stylesheet" href="./assets/style/responsividade/seta-top.css">
+    <link rel="stylesheet" href="./assets/style/responsividade/respon-icone-carrinho.css">
+    <title>Meteora</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div id="head1">
+            <img src="assets/imgens/Desktop/Logo desktop.png" alt="logo da Meteora" id="logo">
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="./index.html" class="menu-item">Home</a></li>
+                    <li><a href="./nossas-lojas.html" class="menu-item">Nossas lojas</a></li>
+                    <li><a href="./novidades.html" class="menu-item">Novidades</a></li>
+                    <li><a href="./promocoes.html" class="menu-item">Promoções</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form action="assets/js/dados.js" method="post" id="head2">
+            <input type="text" name="busca" id="busca" placeholder="Digite o produto">
+            <button type="submit">Buscar</button>
+        </form>
+        <!-- tags para menu Hamburger -->
+        <div class="mobile-menu-icone">
+            <button onclick="menuShow()"><img class="icon"
+                    src="assets/imgens/Mobile/Ícones/navbar-mobile/icone-menu-ham.svg"
+                    alt="Ícone Menu Hamburger"></button>
+        </div>
+        <div class="mobile-menu">
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a href="./index.html">Home</a>
+                        <img class="linha-menu" src="assets/imgens/Mobile/Line 1.svg" alt="Linha">
+                    </li>
+                    <li class="nav-item">
+                        <a href="./nossas-lojas.html">Nossas lojas</a>
+                        <img class="linha-menu" src="assets/imgens/Mobile/Line 1.svg" alt="Linha">
+                    </li>
+                    <li class="nav-item">
+                        <a href="./novidades.html">Novidades</a>
+                        <img class="linha-menu" src="assets/imgens/Mobile/Line 1.svg" alt="Linha">
+                    </li>
+                    <li class="nav-item">
+                        <a href="./promocoes.html">Promoções</a>
+                        <img id="sem-linha" src="assets/imgens/Mobile/Line 1.svg" alt="Linha"
+                            style="visibility: hidden;">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="mobile-busca">
+        <form action="assets/js/dados.js" method="post" id="busca-mobile">
+            <input type="text" name="mobile-search" id="mobile-search" placeholder="Digite o produto">
+            <button type="submit" id="botao-mobile-buscar">Buscar</button>
+        </form>
+    </div>
+    <main class="lojas">
+        <div class="div-head">
+            <div class="div-titulos">
+                <h1 id="titulo-pg">Nossas Lojas</h1>
+                <p id="parag1">Encontre uma loja da Meteora mais perto de você.</p>
+                <p id="parag2">Descubra nossas lojas e viva o estilo Meteora em cada detalhe.</p>
+            </div>
+            <img src="./assets/imgens/nossas-lojas.svg" alt="Ilustração localização" id="ilust-local">
+        </div>
+        <div class="lista-cidades">
+            <div class="select-container">
+                <div class="list-state">
+                    <span>Estado</span>
+                    <select id="estado" onchange="atualizarCidades()">
+                        <option value="">Selecione o Estado</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PR">Paraná</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                    </select>
+                </div>
+                <div class="list-city">
+                    <span>Cidade</span>
+                    <select id="cidade" onchange="exibirLojas()">
+                        <option value="">Selecione a Cidade</option>
+                    </select>
+                </div>
+            </div>
+            <div id="lista-lojas"></div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p class="rodape-texto">
+            2025 © Desenvolvido por
+            <a href="https://github.com/DaissaMatias" id="link-rodape" target="_blank" rel="noopener">Daissa Matias</a>
+            | Projeto fictício sem fins comerciais.
+        </p>
+    </footer>
+    <!--Ícone do Carrinho-->
+    <a href="./pg-sacola.html">
+        <div id="icone-carrinho" class="icone-carrinho oculto">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#9353e1">
+                <path
+                    d="M286.79-81Q257-81 236-102.21t-21-51Q215-183 236.21-204t51-21Q317-225 338-203.79t21 51Q359-123 337.79-102t-51 21Zm400 0Q657-81 636-102.21t-21-51Q615-183 636.21-204t51-21Q717-225 738-203.79t21 51Q759-123 737.79-102t-51 21ZM235-741l110 228h288l125-228H235Zm-30-60h589.07q22.97 0 34.95 21 11.98 21-.02 42L694-495q-11 19-28.56 30.5T627-453H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Zm140 288h288-288Z" />
+            </svg>
+            <span id="carrinho-cont" class="hidden">0</span>
+        </div>
+    </a>
+    <button id="backToTop" class="back-to-top">
+        <img src="./assets/imgens/seta-top.svg" alt="topo">
+    </button>
+    <script src="./assets/js/selecao-lojas.js" defer></script>
+    <script src="./assets/js/communs.js" defer></script>
+    <script src="./assets/js/atualiza-carrinho.js"></script>
+</body>
+
+</html>

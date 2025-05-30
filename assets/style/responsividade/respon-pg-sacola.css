@@ -1,0 +1,164 @@
+@media screen and (max-width: 1155px) {
+    .titulo-sacola h2 {
+        margin: 1rem 6rem 0.5rem;
+    }
+
+    .carrinho-sacolaItem {
+        max-width: 95%;
+        padding: 1rem;
+    }
+
+    .carrinho-resumo {
+        max-width: 95%;
+        padding: 2rem;
+        grid-template-columns: 390px 500px;
+    }
+
+    .carrinho-item {
+        gap: 12px;
+    }
+
+    .resumo {
+        justify-content: center;
+        row-gap: 8px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .carrinho-resumo {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .frete {
+        align-items: center;
+        margin: 0.5rem 0 2rem;
+        padding: 0;
+    }
+
+    .resumo {
+        justify-content: center;
+        row-gap: 6px;
+        font-size: 16px;
+    }
+
+    .resumo-total {
+        line-height: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carrinho-sacolaItem{
+        width: 90%;
+        padding: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .carrinho-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .produto-sacolaDetalhes h2{
+       font-size: 22px;
+       padding-bottom: 6px;
+    }
+    .produto-sacolaDetalhes p{
+        font-size: 15px;
+     }
+
+     .produto-sacolaAcoes {
+        align-items: center;
+     }
+     .produto-sacolaAcoes label {
+        font-size: 15px;
+     }
+
+     .produto-sacolaPreco {
+        text-align: center;
+        margin-right: 0;
+        font-size: 15px;
+     }
+
+     .cep-info p {
+        font-size: 15px;
+     }
+
+     .resumo-ft, .resumo-prod {
+        font-size: 15px;
+     }
+     .resumo-total {
+        font-size: 19px;
+     }
+     .resumo-parc {
+        font-size: 14px;
+     }
+     .cupons {
+        font-size: 13px;
+     }
+
+     .btn {
+        width: 40%;
+        padding: 1rem;
+     }
+}
+
+@media screen and (max-width: 540px) {
+    .carrinho-sacolaItem {
+        padding: 0.8rem;
+    }
+
+    .produto-sacolaDetalhes h2 {
+        font-size: 1.1rem;
+    }
+
+    .carrinho-resumo {
+        padding: 1rem;
+    }
+
+    .frete {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        gap: 6px;
+        margin: 0.5rem 0 1.5rem;
+    }
+
+    .frete .frete-opc, .frete label, .frete a {
+        font-size: 15px;
+    }
+
+    .cep-info p {
+        font-size: 14px;
+     }
+
+     .resumo-ft, .resumo-prod {
+        font-size: 14px;
+     }
+     .resumo-total {
+        font-size: 18px;
+     }
+     .resumo-parc {
+        font-size: 13px;
+     }
+     .cupons {
+        font-size: 12px;
+     }
+
+     .carrinho-sacolaAcoes {
+        flex-direction: column;
+     }
+     
+     .btn-primario{
+        margin-right: 0;
+        font-size: 15px;
+     }
+
+     .btn-secundario {
+        font-size: 14px;
+        padding: 0.8rem;
+     }
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imgens/Favicon-64px.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style/variaveis.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/responsividade/responsivo-cabecalho.css">
+    <link rel="stylesheet" href="./assets/style/pg-secundarias.css">
+    <link rel="stylesheet" href="./assets/style/responsividade/seta-top.css">
+    <link rel="stylesheet" href="./assets/style/responsividade/respon-promo.css">
+    <link rel="stylesheet" href="./assets/style/responsividade/respon-icone-carrinho.css">
+    <title>Meteora</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div id="head1">
+            <img src="assets/imgens/Desktop/Logo desktop.png" alt="logo da Meteora" id="logo">
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="./index.html" class="menu-item">Home</a></li>
+                    <li><a href="./nossas-lojas.html" class="menu-item">Nossas lojas</a></li>
+                    <li><a href="./novidades.html" class="menu-item">Novidades</a></li>
+                    <li><a href="./promocoes.html" class="menu-item">Promoções</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form action="assets/js/dados.js" method="post" id="head2">
+            <input type="text" name="busca" id="busca" placeholder="Digite o produto">
+            <button type="submit">Buscar</button>
+        </form>
+        <!-- tags para menu Hamburger -->
+        <div class="mobile-menu-icone">
+            <button onclick="menuShow()"><img class="icon"
+                    src="assets/imgens/Mobile/Ícones/navbar-mobile/icone-menu-ham.svg"
+                    alt="Ícone Menu Hamburger"></button>
+        </div>
+        <div class="mobile-menu">
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a href="./index.html">Home</a>
+                        <img class="linha-menu" src="assets/imgens/Mobile/Line 1.svg" alt="Linha">
+                    </li>
+                    <li class="nav-item">
+                        <a href="./nossas-lojas.html">Nossas lojas</a>
+                        <img class="linha-menu" src="assets/imgens/Mobile/Line 1.svg" alt="Linha">
+                    </li>
+                    <li class="nav-item">
+                        <a href="./novidades.html">Novidades</a>
+                        <img class="linha-menu" src="assets/imgens/Mobile/Line 1.svg" alt="Linha">
+                    </li>
+                    <li class="nav-item">
+                        <a href="./promocoes.html">Promoções</a>
+                        <img id="sem-linha" src="assets/imgens/Mobile/Line 1.svg" alt="Linha"
+                            style="visibility: hidden;">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="mobile-busca">
+        <form action="assets/js/dados.js" method="post" id="busca-mobile">
+            <input type="text" name="mobile-search" id="mobile-search" placeholder="Digite o produto">
+            <button type="submit" id="botao-mobile-buscar">Buscar</button>
+        </form>
+    </div>
+
+    <main class="promo-container">
+        <section class="produtos">
+            <h1 class="sessao-titulo titulo-principal-produto">Promoções Imperdíveis</h1>
+            <p class="parag-prom">Atualize Seu Estilo com Peças Selecionadas e Preços Especiais!</p>
+            <div class="produtos-caixas">
+                <img src="./assets/imgens/Desktop/Imagens Cards Promo/bolsa-couro-mao.png" alt="bolsa em couro">
+                <div class="percent">
+                    <span class="percent-text"><strong>30%</strong>OFF</span>
+                </div>
+                <div class="conteudo-caixa">
+                    <h3 class="titulo-produto">Bolsa Classic</h3>
+                    <p class="descricao-produto">Bolsa de mão em couro marrom, com opção de alça transversal para
+                        versatilidade e durabilidade no seu dia a dia.</p>
+                    <p class="preco-produto old-price">R$ 220,00</p>
+                    <p class="preco-promo">R$ 154,00</p>
+                    <a href="#" class="m-info button">
+                        <span class="v-mais">Ver Mais</span>
+                    </a>
+                </div>
+            </div>
+            <div class="produtos-caixas">
+                <img src="./assets/imgens/Desktop/Imagens Cards Promo/calca-jeans.png" alt="calça jeans azul">
+                <div class="percent">
+                    <span class="percent-text"><strong>25%</strong>OFF</span>
+                </div>
+                <div class="conteudo-caixa">
+                    <h3 class="titulo-produto">Calça Jeans Blue</h3>
+                    <p class="descricao-produto">Calça jeans básica, seu aliado clássico para looks simples e cheios de
+                        personalidade.</p>
+                    <p class="preco-produto old-price">R$ 170,00</p>
+                    <p class="preco-promo">R$ 127,50</p>
+                    <a href="#" class="m-info button">
+                        <span class="v-mais">Ver Mais</span>
+                    </a>
+                </div>
+            </div>
+            <div class="produtos-caixas">
+                <img src="./assets/imgens/Desktop/Imagens Cards Promo/camisa-polo.png" alt="camisa polo branca">
+                <div class="percent">
+                    <span class="percent-text"><strong>20%</strong>OFF</span>
+                </div>
+                <div class="conteudo-caixa">
+                    <h3 class="titulo-produto">Camisa Polo Primor</h3>
+                    <p class="descricao-produto">Polo branca clássica e atemporal, perfeita para um dia de esporte ou
+                        lazer.</p>
+                    <p class="preco-produto old-price">R$ 110,00</p>
+                    <p class="preco-promo">R$ 88,00</p>
+                    <a href="#" class="m-info button">
+                        <span class="v-mais">Ver Mais</span>
+                    </a>
+                </div>
+            </div>
+            <div class="produtos-caixas">
+                <img src="./assets/imgens/Desktop/Imagens Cards Promo/camiseta-basica.png" alt="camiseta preta">
+                <div class="percent">
+                    <span class="percent-text"><strong>22%</strong>OFF</span>
+                </div>
+                <div class="conteudo-caixa">
+                    <h3 class="titulo-produto">Camiseta Básica</h3>
+                    <p class="descricao-produto">Camiseta preta de algodão, despojada e estilosa. Combina com tudo, do
+                        jeans rasgado a uma peça de couro.
+                    </p>
+                    <p class="preco-produto old-price">R$ 70,00</p>
+                    <p class="preco-promo">R$ 54,60</p>
+                    <a href="#" class="m-info button">
+                        <span class="v-mais">Ver Mais</span>
+                    </a>
+                </div>
+            </div>
+            <div class="produtos-caixas">
+                <img src="./assets/imgens/Desktop/Imagens Cards Promo/camiseta-universe.png" alt="camiseta astronalta">
+                <div class="percent">
+                    <span class="percent-text"><strong>18%</strong>OFF</span>
+                </div>
+                <div class="conteudo-caixa">
+                    <h3 class="titulo-produto">Camiseta Universe</h3>
+                    <p class="descricao-produto">Com estampa moderna, possui um tecido macio e confortável, perfeita
+                        para o dia a dia.</p>
+                    <p class="preco-produto old-price">R$ 90,00</p>
+                    <p class="preco-promo">R$ 73,80</p>
+                    <a href="#" class="m-info button">
+                        <span class="v-mais">Ver Mais</span>
+                    </a>
+                </div>
+            </div>
+            <div class="produtos-caixas">
+                <img src="./assets/imgens/Desktop/Imagens Cards Promo/casaco-pele.png" alt="casaco de pele">
+                <div class="percent">
+                    <span class="percent-text"><strong>45%</strong>OFF</span>
+                </div>
+                <div class="conteudo-caixa">
+                    <h3 class="titulo-produto">Casaco Soft</h3>
+                    <p class="descricao-produto">Um casaco de pele sintético, com um toque vintage, que exala confiança
+                        e estilo.
+                    </p>
+                    <p class="preco-produto old-price">R$ 400,00</p>
+                    <p class="preco-promo"> R$ 220,00</p>
+                    <a href="#" class="m-info button">
+                        <span class="v-mais">Ver Mais</span>
+                    </a>
+                </div>
+            </div>
+            <div class="produtos-caixas">
+                <img src="./assets/imgens/Desktop/Imagens Cards Promo/chinelo-couro.png" alt="sandalia preta">
+                <div class="percent">
+                    <span class="percent-text"><strong>34%</strong>OFF</span>
+                </div>
+                <div class="conteudo-caixa">
+                    <h3 class="titulo-produto">Sandália Flex</h3>
+                    <p class="descricao-produto">Sandália preta com detalhe em marrom, a peça-chave para um look casual
+                        e cheio de charme</p>
+                    <p class="preco-produto old-price">R$ 100,00</p>
+                    <p class="preco-promo">R$ 66,00</p>
+                    <a href="#" class="m-info button">
+                        <span class="v-mais">Ver Mais</span>
+                    </a>
+                </div>
+            </div>
+            <div class="produtos-caixas">
+                <img src="./assets/imgens/Desktop/Imagens Cards Promo/sapato-midle.png" alt="sapato preto">
+                <div class="percent">
+                    <span class="percent-text"><strong>55%</strong>OFF</span>
+                </div>
+                <div class="conteudo-caixa">
+                    <h3 class="titulo-produto">Sapato Requinte</h3>
+                    <p class="descricao-produto">Esse sapato é a escolha perfeita para qualquer ocasião, do estilo
+                        prático ao elegante.</p>
+                    <p class="preco-produto old-price">R$ 140,00</p>
+                    <p class="preco-promo">R$ 63,00</p>
+                    <a href="#" class="m-info button">
+                        <span class="v-mais">Ver Mais</span>
+                    </a>
+                </div>
+            </div>
+            <div class="produtos-caixas">
+                <img src="./assets/imgens/Desktop/Imagens Cards Promo/tenis-cano-longo.png" alt="tenis cano alto">
+                <div class="percent">
+                    <span class="percent-text"><strong>38%</strong>OFF</span>
+                </div>
+                <div class="conteudo-caixa">
+                    <h3 class="titulo-produto">Tênis Downtown</h3>
+                    <p class="descricao-produto">Tênis branco de cano longo, a fusão perfeita de conforto e estilo
+                        ousado.</p>
+                    <p class="preco-produto old-price">R$ 200,00</p>
+                    <p class="preco-promo">R$ 124,00</p>
+                    <a href="#" class="m-info button">
+                        <span class="v-mais">Ver Mais</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-texto">
+            2025 © Desenvolvido por
+            <a href="https://github.com/DaissaMatias" id="link-rodape" target="_blank" rel="noopener">Daissa Matias</a>
+            | Projeto fictício sem fins comerciais.
+        </p>
+    </footer>
+    <!--Ícone do Carrinho-->
+    <a href="./pg-sacola.html">
+        <div id="icone-carrinho" class="icone-carrinho oculto">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#9353e1">
+                <path
+                    d="M286.79-81Q257-81 236-102.21t-21-51Q215-183 236.21-204t51-21Q317-225 338-203.79t21 51Q359-123 337.79-102t-51 21Zm400 0Q657-81 636-102.21t-21-51Q615-183 636.21-204t51-21Q717-225 738-203.79t21 51Q759-123 737.79-102t-51 21ZM235-741l110 228h288l125-228H235Zm-30-60h589.07q22.97 0 34.95 21 11.98 21-.02 42L694-495q-11 19-28.56 30.5T627-453H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Zm140 288h288-288Z" />
+            </svg>
+            <span id="carrinho-cont" class="hidden">0</span>
+        </div>
+    </a>
+    <button id="backToTop" class="back-to-top">
+        <img src="./assets/imgens/seta-top.svg" alt="topo">
+    </button>
+    <script src="./assets/js/communs.js" defer></script>
+    <script src="./assets/js/atualiza-carrinho.js"></script>
+</body>
+
+</html>

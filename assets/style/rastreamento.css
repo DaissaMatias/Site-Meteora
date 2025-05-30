@@ -1,0 +1,47 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 92.5vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 50px;
+}
+
+#status-texto {
+    font-size: 18px;
+    font-weight: bold;
+    color: #252525;
+    margin-bottom: 60px;
+}
+
+.btn-primario {
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 510px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primario {
+        margin-right: 0;
+        margin-bottom: 20px;
+        border: 0;
+    }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imgens/Favicon-64px.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style/variaveis.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/responsividade/seta-top.css">
+    <link rel="stylesheet" href="./assets/style/responsividade/responsivo-cabecalho.css">
+    <link rel="stylesheet" href="./assets/style/responsividade/respon-pg-sacola.css">
+    <link rel="stylesheet" href="./assets/style/responsividade/respon-icone-carrinho.css">
+    <title>Mateora</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div id="head1">
+            <img src="assets/imgens/Desktop/Logo desktop.png" alt="logo da Meteora" id="logo">
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="./index.html" class="menu-item">Home</a></li>
+                    <li><a href="./nossas-lojas.html" class="menu-item">Nossas lojas</a></li>
+                    <li><a href="./novidades.html" class="menu-item">Novidades</a></li>
+                    <li><a href="./promocoes.html" class="menu-item">Promoções</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form action="assets/js/dados.js" method="post" id="head2">
+            <input type="text" name="busca" id="busca" placeholder="Digite o produto">
+            <button type="submit">Buscar</button>
+        </form>
+        <!-- tags para menu Hamburger -->
+        <div class="mobile-menu-icone">
+            <button onclick="menuShow()"><img class="icon"
+                    src="assets/imgens/Mobile/Ícones/navbar-mobile/icone-menu-ham.svg"
+                    alt="Ícone Menu Hamburger"></button>
+        </div>
+        <div class="mobile-menu">
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a href="./index.html">Home</a>
+                        <img class="linha-menu" src="assets/imgens/Mobile/Line 1.svg" alt="Linha">
+                    </li>
+                    <li class="nav-item">
+                        <a href="./nossas-lojas.html">Nossas lojas</a>
+                        <img class="linha-menu" src="assets/imgens/Mobile/Line 1.svg" alt="Linha">
+                    </li>
+                    <li class="nav-item">
+                        <a href="./novidades.html">Novidades</a>
+                        <img class="linha-menu" src="assets/imgens/Mobile/Line 1.svg" alt="Linha">
+                    </li>
+                    <li class="nav-item">
+                        <a href="./promocoes.html">Promoções</a>
+                        <img id="sem-linha" src="assets/imgens/Mobile/Line 1.svg" alt="Linha"
+                            style="visibility: hidden;">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="titulo-sacola">
+        <h2>Sacola</h2>
+    </div>
+    <main>
+        <section class="carrinho-sacolaItem">
+            <div class="carrinho-item" id="lista-carrinho">
+                <img src="./assets/imgens/imagem-ilustrativa.png" alt="imagem-ilustrativa" class="produto-sacolaImagem">
+                <div class="produto-sacolaDetalhes">
+                    <h2>Produto ilustrativo Meteora</h2>
+                    <p>Tamanho M</p>
+                    <p>Vendido e entregue por Meteora</p>
+                </div>
+                <div class="produto-sacolaAcoes">
+                    <label for="quantidade">Quantidade:</label>
+                    <select id="quantidade" class="quantidades">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+                    <button class="excluir">Excluir</button>
+                </div>
+                <div class="produto-sacolaPreco">
+                    <p>R$ 150,00 no Pix</p>
+                    <p>ou R$165,00 no cartão</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="carrinho-resumo">
+            <div class="frete">
+                <p class="frete-opc">Outras opções de entrega na próxima etapa.</p>
+                <label for="cep"><strong>Frete para o CEP</strong></label>
+                <div class="frete-input-button">
+                    <input type="text" id="cep" placeholder="00000-000">
+                    <button type="button">OK</button>
+                </div>
+                <span class="erro" id="erro-frete"></span>
+                <a href="https://buscacepinter.correios.com.br/app/localidade_logradouro/index.php" target="_blank">Não
+                    sei o CEP</a>
+            </div>
+            <div class="resumo">
+                <p class="resumo-itens resumo-ft">Frete Total: <span>R$00,00</span></p>
+                <p class="resumo-itens resumo-prod">Produtos: <span>R$250,00</span></p>
+                <p class="resumo-itens resumo-total"><strong>Total:</strong> <span>R$230,00 no Pix</span><br> ou
+                    <span>R$250,00 no cartão</span>
+                </p>
+                <p class="resumo-itens resumo-parc">💳 (Em até 5x de R$50,00 sem juros no Cartão)</p>
+                <p class="cupons"> Tem cupom ou vale compra? Você poderá utilizá-lo <br> na etapa de pagamento, se
+                    aplicável.</p>
+            </div>
+        </section>
+
+        <div class="carrinho-sacolaAcoes">
+            <a href="./index.html" class="btn btn-secundario">Comprar mais produtos</a>
+            <a href="./entrega.html" class="btn btn-primario">Continuar</a>
+        </div>
+        <button id="backToTop" class="back-to-top">
+            <img src="./assets/imgens/seta-top.svg" alt="topo">
+        </button>
+    </main>
+    <div class="space"></div>
+    <footer class="rodape">
+        <p class="rodape-texto">
+            2025 © Desenvolvido por
+            <a href="https://github.com/DaissaMatias" id="link-rodape" target="_blank" rel="noopener">Daissa Matias</a>
+            | Projeto fictício sem fins comerciais.
+        </p>
+    </footer>
+    <script src="./assets/js/communs.js"></script>
+    <script type="module" src="./assets/js/carrinho-resumo-sacola.js" defer></script>
+    <script type="module" src="./assets/js/processo-carrinho.js" defer></script>
+</body>
+
+</html>

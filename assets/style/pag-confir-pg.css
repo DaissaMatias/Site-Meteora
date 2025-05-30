@@ -1,0 +1,178 @@
+.confirmacao-pedido {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.confirmacao-pedido h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--cor-roxo);
+}
+
+.confirmacao-pedido h3 {
+    margin-bottom: 20px;
+}
+
+.endereco-entrega, .itens-sacola, .forma-pagamento {
+    background-color: white;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.endereco-entrega p span {
+    margin-left: 8px;
+}
+
+.forma-pagamento div{
+    margin-bottom: 10px;
+}
+
+#detalhes-cartao input, #detalhes-cartao select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.endereco-entrega p, .itens-sacola p {
+    line-height: 2.2;
+    color: #333;
+}
+
+.itens-sacola ul {
+    list-style: none;
+    padding: 0;
+}
+.itens-sacola li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.icone-pagamento {
+    width: 28px;
+    height: auto;
+    margin-right: 3px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+label:hover .icone-pagamento{
+    transform: scale(1.2);
+}
+
+.pagamento-detalhes{
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+.oculto {
+    display: none;
+}
+
+#parcelamento{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.pix-codigo {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.pix-codigo input{
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #e0e0e0;
+    /* cursor: not-allowed; */
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.oculto {
+    display: none;
+}
+
+.modal-conteudo {
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+    text-align: center;
+    width: 30% !important;
+}
+.modal-conteudo h2 {
+    color: var(--cor-verde);
+    margin-bottom: 0;
+}
+.modal-conteudo button {
+    padding: 10px;
+    background-color: var(--cor-roxo);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-buttons .btn-primario {
+    margin-right: 0;
+}
+
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"] + label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+input[type="radio"] + label::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--cor-roxo);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+input[type="radio"]:checked + label::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--cor-roxo);
+    border-radius: 50%;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

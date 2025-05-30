@@ -1,0 +1,62 @@
+/*Texto e Imagem localização*/
+@media (min-width: 580px) and (max-width: 760px) {
+    .div-head {
+        margin: 0 1.5rem;
+        min-height: 350px;
+    }
+    #titulo-pg {
+        font-size: 22px;
+    }
+    #parag1 {
+        font-size: 28px;
+    }
+    #parag2 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 579px) {
+    .div-head {
+        margin: 0 1.5rem;
+        min-height: 350px;
+    }
+    #titulo-pg {
+        font-size: 20px;
+    }
+    #parag1 {
+        font-size: 26px;
+    }
+    #parag2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 479px) {
+    .div-head {
+        margin: 0 1.5rem;
+        min-height: 280px;
+    }
+    #ilust-local {
+        display: none;
+    }
+    #titulo-pg {
+        font-size: 22px;
+    }
+    #parag1 {
+        font-size: 28px;
+    }
+    #parag2 {
+        font-size: 16px;
+    }
+}
+/*Formulário de Estados/Cidades*/
+@media (max-width: 410px) {
+    .select-container {
+        flex-direction: column;
+    }
+    .select-container select {
+        max-height: 150px;
+        overflow-y: auto;
+    }
+    
+}

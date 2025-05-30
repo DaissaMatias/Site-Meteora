@@ -1,0 +1,134 @@
+/*Largura do carrossel e imagens*/
+@media (max-width: 1675px) {
+    .slider {
+        height: 350px;
+    }
+
+    .slides {
+        width: 100%;
+    }
+
+    .slides-imagens {
+        flex: 0 0 100%;
+    }
+
+}
+/*Setas de navegação e barras de navegação*/
+@media (max-width: 1200px) {
+    /*Setas*/
+    #prev-button {
+        left: 5%;
+    }
+    #next-button {
+        right: 5%;
+
+    }
+    /*Barras*/
+
+    .slider {
+        height: 320px;
+    }
+
+    .navigation-auto, .manual-navigation {
+        bottom: 25px;
+    }
+}
+
+@media (max-width: 1085px) {
+    .slider {
+        height: 280px;
+    }
+
+    .navigation-auto, .manual-navigation {
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 970px) {
+    .slider {
+        height: 260px;
+    }
+
+    .navigation-auto, .manual-navigation {
+        bottom: 15px;
+    }
+}
+
+@media (max-width:900px) {
+    .slider {
+        height: 220px;
+    }
+
+    .navigation-auto, .manual-navigation {
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        height: 330px;
+    }
+    .navigation-auto, .manual-navigation {
+        bottom: 18px;
+    }
+    .first img {
+        content: url(../../imgens/Tablet/Banner\ carousel\ 1\ _\ 768.png);
+    }
+    .second img {
+        content: url(../../imgens/Tablet/Banner\ carousel\ 2\ _\ 768.png);
+    }
+    .third img {
+        content: url(../../imgens/Tablet/Banner\ carousel\ 3\ _\ 768.png);
+    }
+} 
+
+@media (max-width: 612px) {
+    .slider {
+        height: 280px;
+    }
+    .navigation-auto, .manual-navigation {
+        bottom: 16px;
+    }
+}
+
+@media (max-width: 520px) {
+    .slider {
+        height: 220px;
+    }
+    .navigation-auto, .manual-navigation {
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 416px) {
+    .slider {
+        height: 190px;
+    }
+    .navigation-auto, .manual-navigation {
+        bottom: 12px;
+    }
+}
+ @media (max-width: 380px) {
+    .slider {
+        height: 385px;
+    }
+    .navigation-auto, .manual-navigation {
+        bottom: 14px;
+    }
+    #prev-button {
+        left: 11%;
+    }
+    #next-button {
+        right: 11%;
+
+    }
+    .first img {
+        content: url('../../imgens/Mobile/Banner\ carousel\ 1\ _\ 375.png');
+    }
+    .second img {
+        content: url('../../imgens/Mobile/Banner\ carousel\ 2\ _\ 375.png');
+    }
+    .third img {
+        content: url('../../imgens/Mobile/Banner\ carousel\ 3\ _\ 375.png');
+    }
+ }
