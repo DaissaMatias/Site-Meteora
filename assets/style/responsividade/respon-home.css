@@ -206,6 +206,10 @@
         gap: 10px;
     }
 
+    .opcao-tamanho {
+        gap: 11px;
+    }
+
     .opcoes-cores input[type="radio"] {
         width: 15px;
         height: 15px;
@@ -323,6 +327,13 @@
         width: 15px;
         height: 15px;
         padding: 8px;
+    }
+
+    .opcoes-cores,
+    .opcao-tamanho {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .opcao-tamanho {
