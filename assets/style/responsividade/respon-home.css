@@ -315,7 +315,7 @@
         gap: 5px;
     }
 
-    .opcoes-cores label span{
+    .opcoes-cores label span {
         font-size: 10px;
     }
 
@@ -355,7 +355,7 @@
         margin-right: 8px;
     }
 
-    .modal-header > img {
+    .modal-header>img {
         display: none;
     }
 
@@ -395,7 +395,7 @@
         width: 40px;
     }
 
-    .modal-body .produto-detalhes .parag-desc::after{
+    .modal-body .produto-detalhes .parag-desc::after {
         display: none;
     }
 
@@ -449,7 +449,7 @@
         gap: 0px;
     }
 
-    .opcoes-cores label span{
+    .opcoes-cores label span {
         display: none;
     }
 
@@ -457,6 +457,13 @@
         width: 15px;
         height: 15px;
         padding: 8px;
+    }
+
+    .opcoes-cores,
+    .opcao-tamanho {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .opcao-tamanho {
